@@ -366,7 +366,7 @@
 
 /*Services*/
 
-.services, .services_personal {
+.services, .services_personal, .services__projects {
     background: beige;
     display: flex;
     flex-direction: column;
@@ -388,13 +388,13 @@
     -moz-text-fill-color: transparent;
 }
 
-.services__container {
+.services__container, .services__container__projects {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.services__card {
+.services__card, .services__card__projects {
     margin: 1rem;
     height: 525px;
     width: 400px;
@@ -410,19 +410,19 @@
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%); /*url('/images/pic3.jpg');*/
 }
 
-.services h2{
+.services h2, .services__card__projects h2{
     position: absolute;
     top: 350px;
     left: 30px;
 }
 
-.services__card p {
+.services__card p, .services__card__projects p {
     position: absolute;
     top: 400px;
     left: 30px;
 }
 
-.services__card button {
+.services__card button, .services__card__projects button {
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -436,7 +436,7 @@
     cursor: pointer;
 }
 
-.services__card:hover {
+.services__card:hover, .services__card__projects:hover {
     transform: scale(1.075);
     transition: .2s ease-in;
     cursor: pointer;
@@ -653,4 +653,40 @@
 .email__text{
     color: white;
     display: inline;
+}
+
+/*projects page*/
+
+.services__container__projects {
+    display: flex;
+    justify-content: center;
+}
+
+.services__card__projects {
+    height: 40%;
+    width: 30%;
+}
+
+@media screen and (max-width: 960px) {
+    .services__projects {
+        height: 2200px;
+        width: auto;
+        display: flex;
+    }
+   
+    .services__card__projects{
+        margin: 70px;
+        height: 450px;
+        width: 320px;
+    }
+
+    .services__container__projects{
+        padding: 10px;
+    }
+}
+
+
+
+.services__projects h1{
+    padding: 55px;
 }
