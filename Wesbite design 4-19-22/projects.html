@@ -42,7 +42,7 @@
             <div class="main__container">
                 <div class="main__content">
                     <h1>Matias Riosa</h1>
-                    <p>Computer Science student at University of Central Florida </p>
+                    <p><span class = "auto-type"></span></p>
                 </div>
             </div>
             <div class="main__img--container">
@@ -56,18 +56,15 @@
         <h1>Examples of my work</h1>
         <div class="services__container__projects" id="services__container">
             <div class="services__card__projects">
-                <h2>Othello game</h2>
-                <button><a href="https://github.com/m-riosa/othello-game-" class="services__links">To github</a></button>
+                <button><a href="https://github.com/m-riosa/othello-game-" class="services__links">Othello game</a></button>
                 <img src="/images/othello.png" class="services__picture"> <!--Adding link to projects here once I have sufficient projects-->
             </div>
             <div class="services__card__projects">
-                <h2>Regression Model</h2>
-                <button><a href="https://github.com/m-riosa/Regression-model" class="services__links">To github</a></button>
+                <button><a href="https://github.com/m-riosa/Regression-model" class="services__links">Regression model</a></button>
                 <img src="/images/regression model.png" class="services__picture">
             </div>
             <div class="services__card__projects">
-                <h2>Code for this cite</h2>
-                <button><a href="https://github.com/m-riosa/matias-wesbite" class="services__links">To github</a></button>
+                <button><a href="https://github.com/m-riosa/matias-wesbite" class="services__links">Code for this site</a></button>
                 <img src="/images/website screenshot.png" class="services__picture"> <!--Adding link to projects here once I have sufficient projects-->
             </div>
         </div>
@@ -103,6 +100,18 @@
 
 
     <script src="app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Computer Science student at University of Central Florida"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true
+        })
+    </script>
     
 </body>
 </html>

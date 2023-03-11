@@ -210,7 +210,7 @@
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #131313;
+    background-color: #463d3d;
     z-index: 1;
     width: 100%;
     max-width: 3500px;
@@ -223,8 +223,8 @@
 
 .main__content h1 {
     font-size: 4rem;
-    background-color: beige;
-    background-image: linear-gradient(to top, blue 0%, blue 100%);
+    background-color: rgb(147, 147, 62);
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.98) 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -246,7 +246,13 @@
     margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700;
-    color: #fff;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #080404 0%, #070704 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent
 }
 
 .main__btn {

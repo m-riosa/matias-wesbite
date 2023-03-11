@@ -42,7 +42,7 @@
             <div class="main__container">
                 <div class="main__content">
                     <h1>Matias Riosa</h1>
-                    <p>Computer Science student at University of Central Florida </p>
+                    <p><span class = "auto-type"></span></p>
                 </div>
             </div>
             <div class="main__img--container">
@@ -57,14 +57,12 @@
         <div class="services__container" id="services__container">
             <div class="services__card">
                 <h2>About me</h2>
-                <button><a href="/Wesbite design 4-19-22/home.html" class="services__links">Personal Story</a></button>
+                <button><a href="/Wesbite design 4-19-22/index.html" class="services__links">Personal Story</a></button>
                 <img src="/images/argentina_picture.jpg" class="services__picture">
             </div>
             <div class="services__card">
-                <h2>Portfolio</h2>
-                <p>See some examples of my work</p>
-                <button><a href="/Wesbite design 4-19-22/projects.html" class="services__links">Get Started</a></button>
-                <img src="/images/code-1839406_1280.jpg" class="services__picture"> <!--Adding link to projects here once I have sufficient projects-->
+                <button><a href="/Wesbite design 4-19-22/projects.html" class="services__links">Portfolio</a></button>
+                <img src="/images/code screenshot.png" class="services__picture"> <!--Adding link to projects here once I have sufficient projects-->
             </div>
         </div>
     </div>
@@ -99,6 +97,16 @@
 
 
     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Computer Science student at University of Central Florida"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true
+        })
+    </script>
     
 </body>
 </html>
